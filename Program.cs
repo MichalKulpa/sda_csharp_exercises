@@ -9,7 +9,7 @@ namespace sda_csharp_exercises
             int[] numbers = { 2, 5, 1, 2, 5 };
             RemoveDuplicates(numbers);
         }
-        static void RemoveDuplicates(int[] numbers)
+        static void RemoveDuplicates(int[] numbers)           
         {
             for(int i = 0;i<numbers.Length;i++)
             {
@@ -18,8 +18,9 @@ namespace sda_csharp_exercises
                     if (numbers[i] == numbers[j]) numbers[j] = -1;
 
                 }
-                if (numbers[i] >= 0) Console.WriteLine(numbers[i]);
+                if (numbers[i] >= 0) Console.Write(numbers[i]+" ");
             }
+
                        
         }
     }

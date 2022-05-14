@@ -6,15 +6,15 @@ namespace sda_csharp_exercises
     {
         static void Main(string[] args)
         {
-            DrawTriangle(3, '*');
+            DrawTriangle(10, '*');
           
         }
         static void DrawTriangle(int size, char character)
         {
             for(int i =0; i < size; i++)
             {
-                Console.Write(character);
-                for (int j = 0; j < i; j++)
+                //Console.Write(character);
+                for (int j = 0; j <= i; j++)
                 {
                     Console.Write(character);
                 }

@@ -6,7 +6,16 @@ namespace sda_csharp_exercises
     {
         static void Main(string[] args)
         {
-            // TODO: add your solution...
+            Console.WriteLine(Factorial(3));
+        }
+        static int Factorial(int num)
+        {
+            int result = 1;
+            for(int i = 1; i <= num; i++)
+            {
+                result *= i;
+            }
+            return result;
         }
     }
 }

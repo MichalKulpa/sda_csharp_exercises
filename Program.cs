@@ -14,9 +14,10 @@ namespace sda_csharp_exercises
         {
             int sum=0;
             int[] imprtances = {1,3,7,9,1,3,7,9,1,3,1 };
-            for(int i = 0; i < pesel.Length-1; i++)
+            for(int i = 0; i < 10; i++)
             {
-                sum  +=pesel[i] * imprtances[i];
+                
+                sum = +pesel[i] * imprtances[i];
             }
             return sum;
         }
@@ -38,7 +39,8 @@ namespace sda_csharp_exercises
         {
             int[] peselArray = PeselToIntArray(pesel);
             int sum = SumOfPeselProducts(peselArray);
-            return PeselModulo(sum) == 0;
+            Console.WriteLine(sum);
+            return 10 - PeselModulo(sum) == peselArray[10] ;
         }
 
 

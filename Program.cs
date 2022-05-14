@@ -28,6 +28,7 @@ namespace sda_csharp_exercises
             for (int i = 0; i < peselCharArray.Length; i++)
             {
                 peselIntArray[i] = Convert.ToInt32(peselCharArray[i]);
+                
             }
             return peselIntArray;
         }
@@ -39,7 +40,7 @@ namespace sda_csharp_exercises
         {
             int[] peselArray = PeselToIntArray(pesel);
             int sum = SumOfPeselProducts(peselArray);
-            Console.WriteLine(sum);
+            //Console.WriteLine(sum);
             return 10 - PeselModulo(sum) == peselArray[10] ;
         }
 

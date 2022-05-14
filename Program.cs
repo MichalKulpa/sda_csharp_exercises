@@ -6,7 +6,18 @@ namespace sda_csharp_exercises
     {
         static void Main(string[] args)
         {
-            // TODO: add your solution...
+            Console.Write("Podaj podstawę: ");
+            int x = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Podaj wykładnik: ");
+            int y = Convert.ToInt32(Console.ReadLine());
+            if (y > 0)
+            {
+                Console.WriteLine(Math.Pow(x, y));
+            }
+            else
+            {
+                Console.WriteLine("Wykładnik jest ujemny, podaj inny.");
+            }
         }
     }
 }
